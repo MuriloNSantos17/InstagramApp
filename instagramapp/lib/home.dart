@@ -15,10 +15,30 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text("Instagram", style: TextStyle(
-          fontSize: 30,
+        title: const Text("Instagram", style: TextStyle(
+          fontSize: 40,
           fontWeight: FontWeight.bold,
+          fontFamily: 'Billabong'
         ),),
+        actions: [
+          GestureDetector(
+            child: const Icon(
+              Icons.add_box_outlined,
+              size: 30,
+            ),
+            onTap: (){},
+          ),
+          SizedBox(
+            width: 20,
+          ),
+          GestureDetector(
+            child: const Icon(
+              Icons.favorite_border_outlined,
+              size: 30,
+            ),
+            onTap: (){},
+          ),
+        ],
       ),
       body: Column(
         children: [
