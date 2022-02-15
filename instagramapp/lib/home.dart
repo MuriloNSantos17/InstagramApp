@@ -197,7 +197,33 @@ class _HomeState extends State<Home> {
 
         ),
       ),
-      bottomNavigationBar: ,
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+            border: Border(
+                top: BorderSide(
+                  color: Colors.white,
+                  width: .3
+                ),
+            )
+        ),
+        child: BottomNavigationBar(
+          currentIndex: 0,
+          fixedColor: Colors.white,
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.black,
+          iconSize: 30,
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label:''),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label:''),
+            BottomNavigationBarItem(icon: Icon(Icons.ondemand_video), label:''),
+            BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined), label:''),
+            BottomNavigationBarItem(icon: CircleAvatar(
+              backgroundColor: Colors.pink,
+              radius: 15,
+            ), label: ''),
+          ],
+        ),
+      ),
     );
   }
 }
