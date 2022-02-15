@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
                                 SizedBox(
                                   width: 5,
                                 ),
-                                Text("Tirano Sauro",
+                                Text("Usuário",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           Expanded(child:
-                          Image.asset("assets/images/heineken.jpeg",
+                          Image.asset("assets/images/frase.jpeg",
                               fit: BoxFit.fill
                           )),
 
@@ -138,7 +138,7 @@ class _HomeState extends State<Home> {
                                     height: 10,
                                   ),
                                   Text(
-                                    "@ronaldinho 10000 likes",
+                                    "@ronaldinho, 10000 likes",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16
@@ -147,14 +147,14 @@ class _HomeState extends State<Home> {
                                     TextSpan(
                                       children: [
                                         TextSpan(
-                                          text: "Tirano Sauro",
+                                          text: "Usuário",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 16,
                                           )
                                         ),
                                         TextSpan(
-                                            text: " Heineken é vida",
+                                            text: " Liderança é Fundamental",
                                         )
                                       ]
                                     ),

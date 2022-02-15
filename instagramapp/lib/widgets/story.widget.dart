@@ -53,7 +53,7 @@ class Story extends StatelessWidget {
               const SizedBox(
                 height: 5,
               ),
-              Text( index==0 ? 'Your Story' : "Trex", style: TextStyle(
+              Text( index==0 ? 'Your Story' : "Ted", style: TextStyle(
                 fontSize: 12,
                 color: index==0 ? Colors.grey: Colors.white,
               ),),
