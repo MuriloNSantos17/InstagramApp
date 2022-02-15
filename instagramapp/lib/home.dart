@@ -53,17 +53,20 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      body: Column(
-        children:  [
-          const Story(),
-          Expanded(
-            child: ListView.separated(
+      body: SingleChildScrollView(
+        child: Column(
+          children:  [
+            const Story(),
+            ListView.separated(
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
                 itemBuilder: (_,index){
                   return ConstrainedBox(
                       constraints: BoxConstraints(
                         maxHeight: size.height * 0.7,
                       ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
                             padding: EdgeInsets.all(10),
@@ -104,7 +107,7 @@ class _HomeState extends State<Home> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Row(
-                                    
+
                                     children: const [
                                       Icon(
                                         Icons.favorite_border,
@@ -165,7 +168,18 @@ class _HomeState extends State<Home> {
                                          backgroundColor: Colors.pink,
                                          radius: 10,
                                        ),
-
+                                       SizedBox(
+                                         width: 10,
+                                       ),
+                                       Text('Add a comment....', style:
+                                       TextStyle(
+                                         color: Colors.grey,
+                                       ),),
+                                      Spacer(),
+                                      Text('🤣 🥰 🦖', style:
+                                      TextStyle(
+                                        color: Colors.grey,
+                                      ),)
                                     ],
                                   )
                                 ],
@@ -178,11 +192,12 @@ class _HomeState extends State<Home> {
                 separatorBuilder: (_,index){
                   return const SizedBox(height: 25,);
                 },
-                itemCount: 20),
-          )
-        ]
+                itemCount: 20)
+          ]
 
+        ),
       ),
+      bottomNavigationBar: ,
     );
   }
 }
